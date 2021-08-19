@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опросник</title>
+    <link rel="stylesheet" href="./form.css">
+</head>
+
+<body>
+    <h1>Форма регистрации Яндекс</h1>
+    <form>
+
+        <label for="name">Имя</label>
+        <input type="text" id="name" />
+
+        <label for="surname">Фамилия</label>
+        <input type="text" id="surname" />
+
+        <label for="number-phone">Номер телефона</label>
+        <input type="phon" id="number-phone" />
+
+        <label for="email">e-mail</label>
+        <input type="email" id="email" />
+
+        <label for="password">Пароль</label>
+        <input type="password" id="password" />
+
+        <p>Для каких целей</p>
+        <label for="personal">Личный</label>
+        <input checked type="radio" id="personal" name="goals" />
+        <label for="worker">Рабочий</label>
+        <input type="radio" id="worker" name="goals" />
+
+
+        <div id="errorMessage"></div>
+        <div>
+            <button id="button" type="button">Сохранить</button>
+        </div>
+    </form>
+    <script src="./form.js"></script>
+</body>
+
+</html>
